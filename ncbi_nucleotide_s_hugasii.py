@@ -13,7 +13,7 @@ Entrez.email = "xyz@gmail.com"   #change this with your email address
 
 # Search for sequences related to Solanum hougasii
 search_term = "Solanum hougasii"
-search_handle = Entrez.esearch(db="nucleotide", term=search_term, retmax=10)
+search_handle = Entrez.esearch(db="nucleotide", term=search_term, retmax=108) #as I found 108 records in NCBI Nucleotide database
 search_results = Entrez.read(search_handle) #list of solanum HUgassi keywords in NCBI SRA database
 search_handle.close()
 
