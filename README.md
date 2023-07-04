@@ -20,6 +20,7 @@ export PATH=$PATH:$(pwd)/bin
 ### 3: Check version of the prefetch
 prefetch --version
 
-### Run the py script for fetching fastq files (script_2)
+### Run the py script for fetching fastq files (Solanum_Hugassi_SRA_fastq_files.py)
+No NGS data is available in NCBI SRA archive for the Solanum_Hugassii
 
 
