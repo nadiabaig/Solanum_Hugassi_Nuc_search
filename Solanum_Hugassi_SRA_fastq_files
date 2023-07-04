@@ -1,1 +1,17 @@
+import subprocess
 
+# Set the SRA accession number for Solanum hougasii
+sra_accession = "SRP446463"  # Replace with the actual SRA accession number for the fastq files avaialble in NCBI SRA database. There were no records found for the hugassii
+
+# Use prefetch to download the SRA data
+#prefetch_command = ["prefetch", sra_accession]
+prefetch_command = ["/1data/Nadia/BNA_test/sratoolkit.3.0.5-ubuntu64/bin/prefetch", sra_accession]
+subprocess.run(prefetch_command, check=True)
+
+# Use fastq-dump to convert the SRA data to FASTQ format
+#fastq_dump_command = ["fastq-dump", "--split-files", sra_accession]
+fastq_dump_command = ["/1data/Nadia/BNA_test/sratoolkit.3.0.5-ubuntu64/bin/fastq-dump", "--split-files", sra_accession]
+
+subprocess.run(fastq_dump_command, check=True)
+
+print("FASTQ files downloaded and extracted successfully.")
