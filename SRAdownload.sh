@@ -1,8 +1,4 @@
-nadia baig <nadiabeg.comsats@gmail.com>
-	
-07:38 (2 hours ago)
-	
-to me
+
 
 #!/bin/bash
 
