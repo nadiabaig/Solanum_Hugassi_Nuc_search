@@ -1,7 +1,7 @@
 from Bio import Entrez
 
 # Set your email address (required by NCBI)
-Entrez.email = "nadiabeg.comsats@gmail.com"
+Entrez.email = "n@gmail.com"
 
 # Set the species name
 species_name = "Solanum hougasii"  # Replace with the actual species name
